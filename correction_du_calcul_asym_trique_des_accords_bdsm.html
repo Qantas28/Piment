@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piment — Expériences &amp; Jeux Intimes à Deux</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Typographie éditoriale : Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script src="./piment_tailwind_config.js"></script>
+
+    <link rel="stylesheet" href="./correction_du_calcul_asym_trique_des_accords_bdsm.css" />
+</head>
+<body class="antialiased selection:bg-piment selection:text-paper">
+  <!-- Conteneur principal de l'application éditoriale -->
+  <div id="app" class="min-h-screen flex flex-col"></div>
+
+  <!-- Superposition plein écran : Accueil Néon & Transition de combustion en flamme -->
+  <div id="welcomeLayer" class="fixed inset-0 z-50 flex flex-col items-center justify-center px-6 text-center select-none overflow-hidden">
+    <div id="welcomeBackdrop" class="pointer-events-none absolute inset-0 neon-welcome-bg">
+      <div
+        id="welcomeHalo"
+        class="pointer-events-none absolute w-80 h-80 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-60 transition-opacity duration-300"
+        style="left: 50%; top: 44%; background: radial-gradient(circle, rgba(230, 57, 46, 0.22) 0%, rgba(244, 162, 97, 0.08) 42%, transparent 72%);"
+      ></div>
+    </div>
+
+    <div id="welcomeContent" class="relative z-20 max-w-lg w-full flex flex-col items-center">
+      <div class="inline-flex items-center justify-center gap-3.5 sm:gap-4 mb-5">
+        <span class="animate-ember-pulse inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#1C1212]/85 backdrop-blur-md border border-[#E6392E]/45 neon-chili-glow" aria-hidden="true">
+          <svg class="w-7 h-7 sm:w-8 sm:h-8 text-[#E6392E]" viewBox="0 0 32 32" fill="none">
+            <path d="M21.5 7.2C22.4 5.3 24.3 4.3 26.2 4.6" stroke="#F4A261" stroke-width="2" stroke-linecap="round" />
+            <path
+              d="M21.2 7.5C23.5 8.1 24.9 10.6 24.1 13.4C22.8 18.2 18.8 23.4 12.6 26.1C9.5 27.4 6.4 26.5 5.6 24.5C4.9 22.8 6.1 21 8.1 20.5C12.2 19.5 15.6 16.5 17.3 12.2C18.1 10 19.3 7 21.2 7.5Z"
+              fill="#E6392E"
+              stroke="#FF857A"
+              stroke-width="1.2"
+            />
+            <path d="M19.4 11.4C18.3 14.5 16.2 17.2 13.2 18.9" stroke="#FFD6C9" stroke-width="1.2" stroke-linecap="round" opacity="0.75" />
+          </svg>
+        </span>
+
+        <h1 class="font-serif text-5xl sm:text-6xl md:text-[4.25rem] font-semibold tracking-tight text-[#F8EFEA] neon-title-glow">
+          Piment
+        </h1>
+      </div>
+
+      <p class="font-serif italic text-xl sm:text-2xl md:text-[1.7rem] text-[#E5D7CE] leading-relaxed max-w-md mb-10">
+        Prêt à mettre un peu de <span class="neon-word-glow font-semibold not-italic">piment</span> dans votre relation&nbsp;?
+      </p>
+
+      <button
+        id="enterAppBtn"
+        type="button"
+        class="tactile-btn neon-enter-btn relative z-30 px-9 py-3.5 rounded-full text-sm sm:text-base font-semibold tracking-wide text-[#FFF5F0] inline-flex items-center gap-3 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#E6392E]/60"
+      >
+        <span>Entrer</span>
+        <svg class="w-4 h-4 text-[#F4A261]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+      </button>
+
+      <span class="mt-6 text-[11px] uppercase tracking-[0.22em] text-[#8E7A73]">
+        Expériences intimes à deux
+      </span>
+    </div>
+
+    <canvas id="flameCanvas" class="pointer-events-none absolute inset-0 z-10 w-full h-full hidden"></canvas>
+  </div>
+
+    <script src="./correction_du_calcul_asym_trique_des_accords_bdsm.js"></script>
+</body>
+</html>
